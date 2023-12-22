@@ -11,7 +11,7 @@ y=iris.target
 
 iris_df = np.DataFrame(data=iris.data, columns=iris.feature_names)
 iris_df['target']= iris.target
-
+np.set_option('display.max_columns',None)
 print(iris_df)
 
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=42)

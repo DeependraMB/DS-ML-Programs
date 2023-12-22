@@ -1,6 +1,7 @@
 import nltk
+
 nltk.download('brown')
-nltk.download('punkt' , download_dir="\nltk-3.8.1\nltk-3.8.1")
+nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
 from nltk.tokenize import word_tokenize
@@ -30,3 +31,5 @@ cp = RegexpParser(grammar)
 result = cp.parse(tagged_sentence)
 print("\nChunking with Regular Expressions and POS tags:")
 print(result)
+
+

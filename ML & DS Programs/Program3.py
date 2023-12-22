@@ -39,10 +39,11 @@ y_pred_new_data = decision_tree.predict(new_data)
 # Display predictions for the new data
 print("\nPredictions for New Data:")
 for i, prediction in enumerate(y_pred_new_data):
-    print(f"Data point {i + 1}: Predicted Class {prediction}")
+    print(f"Predicted Class {prediction}")
 
 # Visualize the decision tree
-plt.figure(figsize=(12, 8))
-tree.plot_tree(decision_tree, feature_names=iris.feature_names, class_names=iris.target_names, filled=True)
+plt.figure(figsize=(8, 6))
+
+tree.plot_tree(decision_tree,class_names=iris.target_names,feature_names=iris.feature_names,filled=True)
 plt.title("Decision Tree Visualization")
 plt.show()

@@ -26,6 +26,6 @@ r2score = r2_score(y_test, predictions)
 print("R2_Score:", r2score)
 
 # Plot the data points and regression line
-plt.scatter(x_test, y_test, c="black", label="Data Points")
+plt.scatter(x_test, y_test, c="yellow", label="Data Points")
 plt.plot(x_test, predictions, c="blue", linewidth=3, label="Regression Line")
 plt.show()

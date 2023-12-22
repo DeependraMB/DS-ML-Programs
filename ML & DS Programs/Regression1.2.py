@@ -9,7 +9,7 @@ df = pd.DataFrame(data=ch.data,columns=ch.feature_names)
 df['target'] = ch.target
 
 # Display the first few rows of the dataset
-print("Dataset Head:")
+
 pd.set_option('display.max_columns', None)
 print(df)
 
